@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  @apply bg-ink-50 text-ink-800 dark:bg-ink-900 dark:text-ink-100;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+a,
+div {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 150ms;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-ink-200 dark:bg-ink-700 rounded-full;
+}

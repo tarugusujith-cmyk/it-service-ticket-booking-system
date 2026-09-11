@@ -1,0 +1,257 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "fullName": "Meera Kapoor",
+      "email": "admin@deskflow.io",
+      "password": "Admin@123",
+      "phone": "9876500011",
+      "department": "IT Administration",
+      "role": "admin",
+      "status": "active",
+      "createdDate": "2025-01-10"
+    },
+    {
+      "id": "u2",
+      "fullName": "Rahul Nair",
+      "email": "agent1@deskflow.io",
+      "password": "Agent@123",
+      "phone": "9876500022",
+      "department": "IT Support",
+      "role": "agent",
+      "status": "active",
+      "createdDate": "2025-01-12"
+    },
+    {
+      "id": "u3",
+      "fullName": "Sana Iyer",
+      "email": "agent2@deskflow.io",
+      "password": "Agent@123",
+      "phone": "9876500033",
+      "department": "IT Support",
+      "role": "agent",
+      "status": "active",
+      "createdDate": "2025-01-14"
+    },
+    {
+      "id": "u4",
+      "fullName": "Vikram Das",
+      "email": "employee@deskflow.io",
+      "password": "Employee@123",
+      "phone": "9876500044",
+      "department": "Finance",
+      "role": "employee",
+      "status": "active",
+      "createdDate": "2025-02-01"
+    },
+    {
+      "id": "u5",
+      "fullName": "Priya Menon",
+      "email": "priya.menon@deskflow.io",
+      "password": "Employee@123",
+      "phone": "9876500055",
+      "department": "Marketing",
+      "role": "employee",
+      "status": "active",
+      "createdDate": "2025-02-03"
+    },
+    {
+      "id": "u6",
+      "fullName": "Arjun Shetty",
+      "email": "arjun.inactive@deskflow.io",
+      "password": "Employee@123",
+      "phone": "9876500066",
+      "department": "Operations",
+      "role": "employee",
+      "status": "inactive",
+      "createdDate": "2025-02-05"
+    }
+  ],
+  "categories": [
+    { "id": "c1", "name": "Hardware", "description": "Laptops, desktops, peripherals and physical equipment", "status": "active" },
+    { "id": "c2", "name": "Software", "description": "Application installs, licensing and software errors", "status": "active" },
+    { "id": "c3", "name": "Network", "description": "Wi-Fi, VPN, LAN and connectivity issues", "status": "active" },
+    { "id": "c4", "name": "Email", "description": "Mailbox, calendar and messaging issues", "status": "active" },
+    { "id": "c5", "name": "Security", "description": "Access breaches, phishing and security incidents", "status": "active" },
+    { "id": "c6", "name": "Access Request", "description": "New accounts, permissions and access changes", "status": "active" },
+    { "id": "c7", "name": "Other", "description": "Anything that doesn't fit the categories above", "status": "active" }
+  ],
+  "tickets": [
+    {
+      "id": "t1",
+      "ticketNumber": "TCK-1001",
+      "subject": "Unable to connect to office Wi-Fi",
+      "description": "Laptop keeps disconnecting from the corporate Wi-Fi every few minutes since this morning.",
+      "createdBy": "u4",
+      "createdByName": "Vikram Das",
+      "assignedAgent": "u2",
+      "assignedAgentName": "Rahul Nair",
+      "category": "Network",
+      "priority": "High",
+      "status": "Closed",
+      "preferredContact": "Email",
+      "createdDate": "2026-09-01T10:30:00",
+      "updatedDate": "2026-09-01T13:30:00",
+      "dueDate": "2026-09-02",
+      "resolution": "Network adapter was reset and the device was reconnected to the corporate Wi-Fi.",
+      "resolutionDate": "2026-09-01T13:00:00",
+      "activity": [
+        { "id": "a1", "timestamp": "2026-09-01T10:30:00", "message": "Ticket created by Vikram Das" },
+        { "id": "a2", "timestamp": "2026-09-01T10:45:00", "message": "Ticket assigned to Rahul Nair" },
+        { "id": "a3", "timestamp": "2026-09-01T11:10:00", "message": "Status changed to In Progress" },
+        { "id": "a4", "timestamp": "2026-09-01T12:15:00", "message": "Comment added by Rahul Nair" },
+        { "id": "a5", "timestamp": "2026-09-01T13:00:00", "message": "Resolution added" },
+        { "id": "a6", "timestamp": "2026-09-01T13:00:00", "message": "Ticket resolved" },
+        { "id": "a7", "timestamp": "2026-09-01T13:30:00", "message": "Ticket closed" }
+      ]
+    },
+    {
+      "id": "t2",
+      "ticketNumber": "TCK-1002",
+      "subject": "Excel crashes when opening large spreadsheet",
+      "description": "The quarterly budget workbook crashes Excel every time I try to open it.",
+      "createdBy": "u5",
+      "createdByName": "Priya Menon",
+      "assignedAgent": "u2",
+      "assignedAgentName": "Rahul Nair",
+      "category": "Software",
+      "priority": "Medium",
+      "status": "In Progress",
+      "preferredContact": "Chat",
+      "createdDate": "2026-09-03T09:15:00",
+      "updatedDate": "2026-09-04T15:00:00",
+      "dueDate": "2026-09-06",
+      "resolution": "",
+      "resolutionDate": "",
+      "activity": [
+        { "id": "a1", "timestamp": "2026-09-03T09:15:00", "message": "Ticket created by Priya Menon" },
+        { "id": "a2", "timestamp": "2026-09-03T09:40:00", "message": "Ticket assigned to Rahul Nair" },
+        { "id": "a3", "timestamp": "2026-09-04T15:00:00", "message": "Status changed to In Progress" }
+      ]
+    },
+    {
+      "id": "t3",
+      "ticketNumber": "TCK-1003",
+      "subject": "New laptop request for onboarding",
+      "description": "New hire starting Monday needs a laptop provisioned with the standard software image.",
+      "createdBy": "u4",
+      "createdByName": "Vikram Das",
+      "assignedAgent": "",
+      "assignedAgentName": "",
+      "category": "Hardware",
+      "priority": "Low",
+      "status": "Open",
+      "preferredContact": "Email",
+      "createdDate": "2026-09-05T08:00:00",
+      "updatedDate": "2026-09-05T08:00:00",
+      "dueDate": "2026-09-08",
+      "resolution": "",
+      "resolutionDate": "",
+      "activity": [
+        { "id": "a1", "timestamp": "2026-09-05T08:00:00", "message": "Ticket created by Vikram Das" }
+      ]
+    },
+    {
+      "id": "t4",
+      "ticketNumber": "TCK-1004",
+      "subject": "Suspicious phishing email received",
+      "description": "Received an email pretending to be from HR asking to reset password via a strange link.",
+      "createdBy": "u5",
+      "createdByName": "Priya Menon",
+      "assignedAgent": "u3",
+      "assignedAgentName": "Sana Iyer",
+      "category": "Security",
+      "priority": "Critical",
+      "status": "Pending",
+      "preferredContact": "Phone",
+      "createdDate": "2026-09-06T11:20:00",
+      "updatedDate": "2026-09-06T14:00:00",
+      "dueDate": "2026-09-06",
+      "resolution": "",
+      "resolutionDate": "",
+      "activity": [
+        { "id": "a1", "timestamp": "2026-09-06T11:20:00", "message": "Ticket created by Priya Menon" },
+        { "id": "a2", "timestamp": "2026-09-06T11:30:00", "message": "Ticket assigned to Sana Iyer" },
+        { "id": "a3", "timestamp": "2026-09-06T12:00:00", "message": "Status changed to In Progress" },
+        { "id": "a4", "timestamp": "2026-09-06T14:00:00", "message": "Status changed to Pending — awaiting security team review" }
+      ]
+    },
+    {
+      "id": "t5",
+      "ticketNumber": "TCK-1005",
+      "subject": "VPN access request for remote work",
+      "description": "Need VPN access set up to work remotely two days a week starting next month.",
+      "createdBy": "u4",
+      "createdByName": "Vikram Das",
+      "assignedAgent": "u3",
+      "assignedAgentName": "Sana Iyer",
+      "category": "Access Request",
+      "priority": "Medium",
+      "status": "Assigned",
+      "preferredContact": "Email",
+      "createdDate": "2026-09-06T16:45:00",
+      "updatedDate": "2026-09-06T17:00:00",
+      "dueDate": "2026-09-10",
+      "resolution": "",
+      "resolutionDate": "",
+      "activity": [
+        { "id": "a1", "timestamp": "2026-09-06T16:45:00", "message": "Ticket created by Vikram Das" },
+        { "id": "a2", "timestamp": "2026-09-06T17:00:00", "message": "Ticket assigned to Sana Iyer" }
+      ]
+    },
+    {
+      "id": "t6",
+      "ticketNumber": "TCK-1006",
+      "subject": "Monitor flickering intermittently",
+      "description": "Second monitor flickers and occasionally goes black for a few seconds.",
+      "createdBy": "u5",
+      "createdByName": "Priya Menon",
+      "assignedAgent": "",
+      "assignedAgentName": "",
+      "category": "Hardware",
+      "priority": "Low",
+      "status": "Open",
+      "preferredContact": "Chat",
+      "createdDate": "2026-09-07T09:00:00",
+      "updatedDate": "2026-09-07T09:00:00",
+      "dueDate": "2026-09-12",
+      "resolution": "",
+      "resolutionDate": "",
+      "activity": [
+        { "id": "a1", "timestamp": "2026-09-07T09:00:00", "message": "Ticket created by Priya Menon" }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "cm1",
+      "ticketId": "t1",
+      "userId": "u2",
+      "userName": "Rahul Nair",
+      "userRole": "agent",
+      "comment": "Checked the router logs, adapter driver seems out of date. Updating now.",
+      "createdDate": "2026-09-01",
+      "createdTime": "12:15 PM"
+    },
+    {
+      "id": "cm2",
+      "ticketId": "t2",
+      "userId": "u2",
+      "userName": "Rahul Nair",
+      "userRole": "agent",
+      "comment": "Could you share the file size and confirm if it happens on other machines too?",
+      "createdDate": "2026-09-04",
+      "createdTime": "03:00 PM"
+    },
+    {
+      "id": "cm3",
+      "ticketId": "t4",
+      "userId": "u3",
+      "userName": "Sana Iyer",
+      "userRole": "agent",
+      "comment": "Please do not click any links in that email. Forwarding to the security team for review.",
+      "createdDate": "2026-09-06",
+      "createdTime": "12:05 PM"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', 'monospace'],
+      },
+      colors: {
+        ink: {
+          50: '#f4f6f8',
+          100: '#e6ebf0',
+          200: '#c7d1db',
+          300: '#9fadbd',
+          400: '#6b7c8f',
+          500: '#4c5c6f',
+          600: '#374555',
+          700: '#283340',
+          800: '#1b2430',
+          900: '#121924',
+        },
+        steel: {
+          50: '#eef5fb',
+          100: '#d6e8f5',
+          200: '#adcfea',
+          300: '#7bb0da',
+          400: '#4a8ec4',
+          500: '#2a5c8a',
+          600: '#224a70',
+          700: '#1b3a58',
+          800: '#152c43',
+          900: '#0f202f',
+        },
+        amber: {
+          50: '#fdf3ea',
+          100: '#fbe3cb',
+          200: '#f6c495',
+          300: '#efa25c',
+          400: '#e8833a',
+          500: '#d66c22',
+          600: '#b3551a',
+          700: '#8a4315',
+          800: '#5f2e0f',
+          900: '#3a1c09',
+        },
+        moss: {
+          50: '#eaf7f0',
+          400: '#3fb37f',
+          500: '#2f9e68',
+          600: '#237d51',
+          700: '#1c6440',
+          800: '#154a30',
+          900: '#0e3320',
+        },
+        brick: {
+          50: '#fbebe9',
+          400: '#e2685f',
+          500: '#d64545',
+          600: '#b3342f',
+          700: '#8a2723',
+          800: '#611b18',
+          900: '#3d100e',
+        },
+      },
+      boxShadow: {
+        card: '0 1px 2px rgba(18,25,36,0.06), 0 1px 0 rgba(18,25,36,0.04)',
+      },
+    },
+  },
+  plugins: [],
+}
